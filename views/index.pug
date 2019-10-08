@@ -3,3 +3,10 @@ extends layout
 block content
   h1= title
   p Welcome to #{title} HALLO
+  .audio-controls
+    input#recorder(type="file" accept="audio/*" capture)
+    audio#player(controls)
+
+    a#download Download
+    button#stop Stop
+    button#start Start
